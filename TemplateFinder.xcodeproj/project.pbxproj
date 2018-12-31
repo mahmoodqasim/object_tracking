@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C84AEDD821618E0100D24460 /* trial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C84AEDD621618E0100D24460 /* trial.cpp */; };
+		C84AEDDA2162A64700D24460 /* kalman_practice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C84AEDD92162A64700D24460 /* kalman_practice.cpp */; };
+		C872C51B218F5E2B0097C448 /* main1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C872C51A218F5E2B0097C448 /* main1.cpp */; };
 		C8808E2420687CBB00013291 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8808E2320687CBB00013291 /* main.cpp */; };
+		C88190BB20A4BD31004CBC64 /* attempts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C88190BA20A4BD31004CBC64 /* attempts.cpp */; };
+		C8B46C62217244E40044F518 /* kftp3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8B46C61217244E40044F518 /* kftp3.cpp */; };
+		C8CE4499216A8026003B1545 /* kftp2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8CE4498216A8026003B1545 /* kftp2.cpp */; };
+		C8CE449E216A81EF003B1545 /* finding_contour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8CE449C216A81EF003B1545 /* finding_contour.cpp */; };
+		C8CE44A1216AA077003B1545 /* kalman.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8CE449F216AA077003B1545 /* kalman.cpp */; };
+		C8CE44A4216BE2DE003B1545 /* template_matching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8CE44A2216BE2DE003B1545 /* template_matching.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +32,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C8247E3A21D81A3B0031447F /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = "../../../../../opencv-3.4.1/build/lib"; sourceTree = "<group>"; };
+		C84AEDD621618E0100D24460 /* trial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = trial.cpp; sourceTree = "<group>"; };
+		C84AEDD92162A64700D24460 /* kalman_practice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = kalman_practice.cpp; sourceTree = "<group>"; };
+		C872C51A218F5E2B0097C448 /* main1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main1.cpp; sourceTree = "<group>"; };
 		C8808E2020687CBB00013291 /* TemplateFinder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TemplateFinder; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8808E2320687CBB00013291 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C88190BA20A4BD31004CBC64 /* attempts.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = attempts.cpp; sourceTree = "<group>"; };
+		C8B46C61217244E40044F518 /* kftp3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = kftp3.cpp; sourceTree = "<group>"; };
+		C8CE4498216A8026003B1545 /* kftp2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = kftp2.cpp; sourceTree = "<group>"; };
+		C8CE449C216A81EF003B1545 /* finding_contour.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = finding_contour.cpp; sourceTree = "<group>"; };
+		C8CE449D216A81EF003B1545 /* finding_contour.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = finding_contour.hpp; sourceTree = "<group>"; };
+		C8CE449F216AA077003B1545 /* kalman.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = kalman.cpp; sourceTree = "<group>"; };
+		C8CE44A0216AA077003B1545 /* kalman.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kalman.hpp; sourceTree = "<group>"; };
+		C8CE44A2216BE2DE003B1545 /* template_matching.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = template_matching.cpp; sourceTree = "<group>"; };
+		C8CE44A3216BE2DE003B1545 /* template_matching.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = template_matching.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +63,7 @@
 		C8808E1720687CBB00013291 = {
 			isa = PBXGroup;
 			children = (
+				C8247E3A21D81A3B0031447F /* lib */,
 				C8808E2220687CBB00013291 /* TemplateFinder */,
 				C8808E2120687CBB00013291 /* Products */,
 			);
@@ -58,6 +81,18 @@
 			isa = PBXGroup;
 			children = (
 				C8808E2320687CBB00013291 /* main.cpp */,
+				C88190BA20A4BD31004CBC64 /* attempts.cpp */,
+				C84AEDD621618E0100D24460 /* trial.cpp */,
+				C84AEDD92162A64700D24460 /* kalman_practice.cpp */,
+				C8CE4498216A8026003B1545 /* kftp2.cpp */,
+				C8B46C61217244E40044F518 /* kftp3.cpp */,
+				C872C51A218F5E2B0097C448 /* main1.cpp */,
+				C8CE449C216A81EF003B1545 /* finding_contour.cpp */,
+				C8CE449D216A81EF003B1545 /* finding_contour.hpp */,
+				C8CE449F216AA077003B1545 /* kalman.cpp */,
+				C8CE44A0216AA077003B1545 /* kalman.hpp */,
+				C8CE44A2216BE2DE003B1545 /* template_matching.cpp */,
+				C8CE44A3216BE2DE003B1545 /* template_matching.hpp */,
 			);
 			path = TemplateFinder;
 			sourceTree = "<group>";
@@ -120,6 +155,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8808E2420687CBB00013291 /* main.cpp in Sources */,
+				C8CE44A1216AA077003B1545 /* kalman.cpp in Sources */,
+				C88190BB20A4BD31004CBC64 /* attempts.cpp in Sources */,
+				C84AEDDA2162A64700D24460 /* kalman_practice.cpp in Sources */,
+				C872C51B218F5E2B0097C448 /* main1.cpp in Sources */,
+				C8B46C62217244E40044F518 /* kftp3.cpp in Sources */,
+				C8CE44A4216BE2DE003B1545 /* template_matching.cpp in Sources */,
+				C8CE4499216A8026003B1545 /* kftp2.cpp in Sources */,
+				C8CE449E216A81EF003B1545 /* finding_contour.cpp in Sources */,
+				C84AEDD821618E0100D24460 /* trial.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +276,29 @@
 		C8808E2820687CBB00013291 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -240,7 +306,29 @@
 		C8808E2920687CBB00013291 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

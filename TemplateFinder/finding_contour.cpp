@@ -103,9 +103,9 @@ Mat fi_con::image_processing(Mat input_target_image, int blockSize, int constant
     nearestNeighbor(smoothed_target, max);
     
     // Displaying images
-//    imshow("smoothed" , smoothed_target);
+    imshow("smoothed" , smoothed_target);
     video_T.write(smoothed_target);
-//    moveWindow("smoothed" , 370,50);
+    moveWindow("smoothed" , 370,50);
     
     return smoothed_target;
 }

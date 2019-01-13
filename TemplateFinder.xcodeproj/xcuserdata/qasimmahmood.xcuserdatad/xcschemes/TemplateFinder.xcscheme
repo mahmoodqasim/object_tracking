@@ -63,43 +63,43 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "vid1.m4v"
+            argument = "vid19.m4v"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "1.0"
+            argument = "0.5"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "15.0"
+            argument = "20.0"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "50"
+            argument = "90"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "10000"
+            argument = "500"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "131"
+            argument = "37"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-91"
+            argument = "-81"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "pat1.jpg"
+            argument = "temp1.jpg"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "pat2.jpg"
+            argument = "temp2.jpg"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "pat3.jpg"
+            argument = "temp3.jpg"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

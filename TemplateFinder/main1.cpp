@@ -75,6 +75,7 @@ int main(int argc, const char * argv[]) {
     Size S(dWidth/resize_factor, dHeight/resize_factor);
     string out_T = string(argv[1]) + "_out_thrsh.m4v";
     string out_D = string(argv[1]) + "_out_track.m4v";
+    string out_G = string(argv[1]) + "_out_gray.m4v";
     
     if( remove(out_T.c_str()) != 0 )
         perror( "Threshold Video" );
@@ -89,6 +90,7 @@ int main(int argc, const char * argv[]) {
     // Writing the output videos (threshold and drawing videos)
     VideoWriter video_T(out_T, 0x31637661, 15, S, false);
     VideoWriter video_D(out_D, 0x31637661, 15, S, true);
+    VideoWriter video_G(out_G, 0x31637661, 15, S, false);
     
     // Loop over all frames in the video
     while(1) {
@@ -170,13 +172,16 @@ int main(int argc, const char * argv[]) {
             if (p-> x > 3 && p->y > 3)
                 // Connect the four verticies with a line
                 polylines(resized_input_target, &p, &n, 1, true, cv::Scalar(160,160,160), 2, LINE_AA);
-            // Drawing on color image
-            polylines(drawing_image, &p, &n, 1, true, cv::Scalar(255,0, 0), 2, LINE_AA);
+                // Drawing on color image
+                polylines(drawing_image, &p, &n, 1, true, cv::Scalar(255,0, 0), 2, LINE_AA);
         }
         
-//        imshow("drawing" , drawing_image);
+        imshow("drawing" , drawing_image);
+        imshow("gray" , resized_input_target);
+        moveWindow("gray" , 0,200);
         video_D.write(drawing_image);
-//        waitKey(5);
+        video_G.write(resized_input_target);
+        waitKey(5);
         
         // Outputting the time elapsed
         auto finish = std::chrono::high_resolution_clock::now();

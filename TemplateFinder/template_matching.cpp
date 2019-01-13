@@ -158,7 +158,7 @@ void temp_mat::find_contours_templates(vector<vector<Point> > squares, Mat smoot
             best_coordinates.push_back(best_coords[3]);
             
             // Add name and coords to tracking function
-            string template_name = "pat" + to_string(best_template+1);
+            string template_name = "temp" + to_string(best_template+1);
             
             // Check if the pattern has already been found, if so, if percentage of match is higher, then replace
             int i=0;
@@ -174,7 +174,7 @@ void temp_mat::find_contours_templates(vector<vector<Point> > squares, Mat smoot
                         tracking_map.insert( make_pair(template_name, best_coordinates) ); // Push back new template match
                         percentages.push_back(maximum_matched); // Push back a new percentage
                         flag=1;
-                        cout << "Found tempalte again! Keeping max best" << endl;
+                        cout << "Found template again! Keeping max best" << endl;
                     }
                 }
             }

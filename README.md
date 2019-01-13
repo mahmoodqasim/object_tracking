@@ -7,7 +7,7 @@ Three files are needed for this codebase: main1.cpp, finding_contour.cpp, and te
 The first 7 parameters are fixed, anything after is used as a template to check against (there needs to be at least 1 template, up to any ammount).
 
 Usage: ./object_tracking video.m4v maxCosine maxRatio minArea maxArea blockSize constant_subtractor template1.jpg template2.jpg template3.jpg template4.jpg . . . 
-Example Usage: ./object_tracking vid2.m4v 0.7 5.0 125 5000 91 -91 pat1.jpg pat2.jpg pat3.jpg 
+Example Usage: ./object_tracking vid2.m4v 0.7 5.0 125 5000 91 -91 temp1.jpg temp2.jpg temp3.jpg 
 
 User-defined Parameters:
 - blockSize: Comes with the adaptive thresholding method. It is a off number chosen (1,3,5,7,...). The larger the number, the larger the region the adaptive threshold looks at when binarizing the current pixel to 0 or 1. A number too small will outline the edges, which is not necessary what we want. We use a number usually above 31 up to 351).
